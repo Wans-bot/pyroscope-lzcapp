@@ -1,0 +1,25 @@
+application:
+  subdomain: pyroscope
+  public_path:
+    - /
+    - /assets
+    - /ingest
+    - /readyz
+    - /healthz
+    - /favicon.svg
+    - /config
+  routes:
+    - /=http://pyroscope.cloud.lazycat.app.pyroscope.lzcapp:4040
+  health_check:
+    test_url: http://pyroscope.cloud.lazycat.app.pyroscope.lzcapp:4040/
+    start_period: 60s
+services:
+  pyroscope:
+    image: registry.lazycat.cloud/wans/grafana/pyroscope:a4d868f1c6ad8d84
+    user: root
+    environment:
+      - PYROSCOPE_LOG_LEVEL=info
+    binds:
+      - /lzcapp/var/pyroscope/data:/data
+      - /lzcapp/var/pyroscope/data-compactor:/data-compactor
+      - /lzcapp/var/pyroscope/data-metastore:/data-metastore

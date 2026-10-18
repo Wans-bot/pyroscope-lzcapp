@@ -1,0 +1,41 @@
+name: Pyroscope
+description: 持续性能分析平台（火焰图/CPU/内存剖析）
+package: cloud.lazycat.app.pyroscope
+version: 2.4.0-2
+author: Grafana
+homepage: https://github.com/grafana/pyroscope
+licenses:
+  - AGPL-3.0
+categories:
+  - 开发者工具
+locales:
+  zh-CN:
+    name: Pyroscope 性能剖析
+    description: 持续性能分析平台，以火焰图直观定位 CPU/内存/IO 性能瓶颈，支持 Python/Go/Java/Ruby/Node.js/Rust 等语言接入
+    usage: >-
+      1. 打开应用进入 Pyroscope 主界面
+
+      2. 在应用接入客户端：安装 Pyroscope SDK（如 pip install pyroscope-io / npm install
+      @pyroscope/nodejs）或使用官方 Agent
+
+      3. 在代码中初始化 Pyroscope，指定 Server Address 为本应用地址 + /ingest，即可开始采集
+
+      4. 在火焰图（Flame graph）页面查看各函数耗时占比，拖拽选中区域可放大下钻
+
+      5. 支持对比视图（Comparison）、性能回归检测（Regression）与标签过滤（Tags）
+  en:
+    name: Pyroscope
+    description: >-
+      Continuous profiling platform with flame graphs for CPU/memory/IO
+      bottleneck analysis
+    usage: >-
+      1. Open the app to the Pyroscope dashboard
+
+      2. Instrument your app: install a Pyroscope SDK (pip install pyroscope-io,
+      npm install @pyroscope/nodejs, etc.)
+
+      3. Initialize Pyroscope with Server Address = this app URL + /ingest
+
+      4. View flame graphs per function, drag to zoom
+
+      5. Use Comparison, Regression detection and tag filtering
