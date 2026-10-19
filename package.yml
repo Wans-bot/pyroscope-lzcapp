@@ -2,7 +2,7 @@ name: Pyroscope
 description: 持续性能分析平台（火焰图/CPU/内存剖析）
 package: cloud.lazycat.app.pyroscope
 license: AGPL-3.0
-version: 2.4.0-2
+version: 2.4.0
 author: Grafana
 homepage: https://github.com/grafana/pyroscope
 licenses:
