@@ -15,8 +15,8 @@ application:
     start_period: 60s
 services:
   pyroscope:
-    # upstream: docker.io/grafana/pyroscope:2.4.0
-    image: registry.lazycat.cloud/wans/grafana/pyroscope:301be250009956b1
+    # upstream: docker.io/grafana/pyroscope:2.4.1
+    image: registry.lazycat.cloud/wans/grafana/pyroscope:dae0ab00a58e4d77
     user: root
     environment:
       - PYROSCOPE_LOG_LEVEL=info
